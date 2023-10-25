@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>BING</title>
+  <style>
+    .button1 {
+      padding: 10px 20px;
+      font-size: 30;
+      background-color: #EC0471;
+      border: 0;
+      border-radius: 10px;
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+    }
+
+    .button1:hover {
+      background-color: #78274D;
+    }
+  </style>
+</head>
+
+<body>
+  <button class=button1 onclick="button1()">open page (bing)</button>
+  <script>
+    function button1() {
+      var win = window.open()
+      var url = "https://bing.com&quot;
+      var iframe = win.document.createElement('iframe')
+      iframe.style.height = "100%";
+      iframe.style.width = "100%";
+      iframe.style.border = "none";
+      iframe.src = url
+      win.document.body.appendChild(iframe)
+    }
+  </script>
+</body>
+
+</html>
